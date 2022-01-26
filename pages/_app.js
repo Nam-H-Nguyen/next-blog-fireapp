@@ -1,4 +1,5 @@
 import Navbar from '../components/Navbar';
+import { Toaster } from 'react-hot-toast';
 import '../styles/globals.css';
 
 // Wrapper of all pages
@@ -8,6 +9,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Navbar />
       <Component {...pageProps} />
+      <Toaster />
     </>
   )
 }

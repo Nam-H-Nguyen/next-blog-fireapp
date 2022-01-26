@@ -1,17 +1,11 @@
 import Loader from '../components/Loader';
+import toast from 'react-hot-toast';
 
 export default function Home() {
   return (
     <div>
-      {/* <Loader show={true} />
-      <Link prefetch={false} href={{
-        pathname: '/[username]',
-        query: {
-          username: 'jeffd23',
-        }
-      }}>
-        <a>Jeff`s profile</a>
-      </Link> */}
+      <button onClick={() => toast.success('hello success toast!')}>Open Toast!</button>
+      <Loader />
     </div>
   )
 }
